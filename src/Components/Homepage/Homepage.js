@@ -1,12 +1,11 @@
 import React from 'react';
-import Router from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import YogaMap from '../Map/Map';
 
 function Homepage() {
   return (
     <div className="homepage">
-      <h1>Homepage</h1>
-      <Link to={'/mantra'}>Mantra of the day</Link>
+      <h1>Yoga Near me</h1>
+      <YogaMap />
     </div>
   )
 }
