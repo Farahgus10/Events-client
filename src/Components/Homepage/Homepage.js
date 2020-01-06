@@ -1,11 +1,11 @@
 import React from 'react';
-import YogaMap from '../Map/Map';
+import Search from '../Search/Search'
 
 function Homepage() {
   return (
     <div className="homepage">
-      <h1>Yoga Near me</h1>
-      <YogaMap />
+      <h1>Search for any event:</h1>
+      <Search />
     </div>
   )
 }

@@ -6,7 +6,6 @@ function Nav() {
     <div className="nav">
       <p>Navigation stuff</p>
       <Link to="/">Homepage </Link><br></br>
-      <Link to={'/mantra'}>Mantra of the day</Link>
     </div>
   )
 }
