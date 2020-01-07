@@ -10,7 +10,10 @@ class Search extends React.Component {
             id="event-search"
             type="text"
             name="event-search" 
-            placeholder="e.g. Ultra Music Festival"/>
+            placeholder="e.g. Ultra Music Festival"
+            value={this.props.searchTerm}
+            onChange={e => this.props.updateSearch(e.target.value)}
+            />
           <button type="submit">Go!</button>
         </form>
       </div>
