@@ -1,6 +1,4 @@
 import React from 'react';
-import EventsResults from '../Results/EventsResults'
-
 
 class Search extends React.Component {
   render(){
@@ -15,12 +13,6 @@ class Search extends React.Component {
             placeholder="e.g. Ultra Music Festival"/>
           <button type="submit">Go!</button>
         </form>
-
-        <section>
-          <EventsResults
-            events={this.props.events}
-           />
-        </section>
       </div>
     )
   }
