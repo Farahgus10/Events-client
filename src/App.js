@@ -53,13 +53,14 @@ class App extends React.Component {
         <div className="nav-bar">
           <Nav />
         </div>
+
       <Route exact path='/' render={() => (
         <Homepage events={this.state.events} searchTerm={this.state.searchTerm} updateSearch={this.updateSearch} handleSubmit={this.handleSubmit}
         handleLikeButton={this.handleLikeButton} handleCheckinButton={this.handleCheckinButton}
-        />
-      )}/>
-      <Route path="/events/:eventId" component={DetailedEventInfo}/>
-      
+        /> )}/>
+
+      <Route path="/events/:eventID" render={(props) => (
+        <DetailedEventInfo events={this.state.events} {...props}/> )}/>
     </div>
     )
   }
